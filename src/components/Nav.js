@@ -9,7 +9,6 @@ const Nav = () => {
   return (
     <nav className="fixed z-50 w-full overflow-hidden bottom-2 lg:bottom-8">
       <div className="container mx-auto">
-        {/* nav inner  */}
         <div className="w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50">
           <Link
             activeClass="active"
