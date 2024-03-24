@@ -23,10 +23,10 @@ const Work = () => {
                 Work.
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-                ullam ipsa, porro enim praesentium voluptatibus voluptatem eius
-                dolores quo ipsum nihil quas doloremque ut repellendus
-                laudantium ab quos quaerat dolorum?
+                Explore my latest works, where I showcase a diverse portfolio of
+                captivating frontend projects, each meticulously crafted to
+                deliver exceptional user experiences and reflect the latest
+                trends in web design.
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
