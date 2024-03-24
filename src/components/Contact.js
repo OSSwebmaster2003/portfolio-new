@@ -7,7 +7,6 @@ const Contact = () => {
     <section className="py-16 lg:section" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
-          {/* text  */}
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -25,13 +24,12 @@ const Contact = () => {
               </h2>
             </div>
           </motion.div>
-          {/* form  */}
           <motion.form
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.3 }}
-            className="flex flex-col items-start flex-1 p-6 pb-24 border rounded-2xl gap-y-6"
+            className="flex flex-col items-start flex-1 p-6 pb-24 mb-10 border rounded-2xl gap-y-6 lg:mb-0"
           >
             <input
               className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-accent"
