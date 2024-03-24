@@ -2,31 +2,32 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 // services data
 const services = [
   {
-    name: "UI/UX Design",
+    name: "Web Development",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa esse quasi quo doloremque pariatur laudantium nostrum ab mollitia necessitatibus quas reiciendis eaque impedit atque et molestiae rerum voluptate, voluptates tenetur.",
+      "Elevate your online presence with my comprehensive web development service, where i blend creativity and technical prowess to deliver tailor-made solutions that bring your vision to life.",
     link: "Learn more",
   },
   {
-    name: "Web Development",
+    name: "Legacy front-end modernization",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa esse quasi quo doloremque pariatur laudantium nostrum ab mollitia necessitatibus quas reiciendis eaque impedit atque et molestiae rerum voluptate, voluptates tenetur.",
+      "We help update an older or outdated front-end codebase to make it more modern, efficient, and effective. Our team picks an appropriate front-end framework for the project, considering the size of the codebase and its complexity.",
     link: "Learn more",
   },
   {
     name: "LMS Services",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa esse quasi quo doloremque pariatur laudantium nostrum ab mollitia necessitatibus quas reiciendis eaque impedit atque et molestiae rerum voluptate, voluptates tenetur.",
+      "Unlock the potential of online education with our LMS services, providing robust platforms and tailored solutions to facilitate seamless learning experiences for students and educators alike.",
     link: "Learn more",
   },
   {
-    name: "CRM Dashboards",
+    name: "CRM Systems",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa esse quasi quo doloremque pariatur laudantium nostrum ab mollitia necessitatibus quas reiciendis eaque impedit atque et molestiae rerum voluptate, voluptates tenetur.",
+      "Empower your business operations with our cutting-edge CRM systems, streamlining customer interactions and maximizing efficiency through intuitive interfaces and advanced analytics.",
     link: "Learn more",
   },
 ];
@@ -36,7 +37,6 @@ const Services = () => {
     <section className="section" id="services">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
-          {/* text  */}
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -46,11 +46,14 @@ const Services = () => {
           >
             <h2 className="mb-6 h2 text-accent">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I'm a Freelance Frontend Developer with over 5 years of experince
+              I'm a Freelance Frontend Developer with over 2 years of experince
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <button className="btn btn-sm">
+              <Link to="work" smooth={true}>
+                See my work
+              </Link>
+            </button>
           </motion.div>
-          {/* services  */}
           <motion.div
             variants={fadeIn("left", 0.3)}
             initial="hidden"
